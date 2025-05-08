@@ -1,4 +1,4 @@
 
 # climaman-webapp
-This is wheather web application
+This is wheather web application(climaman)
 

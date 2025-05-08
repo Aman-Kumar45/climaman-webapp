@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClimaMan</title>
+  <link rel="icon" href="https://img.icons8.com/fluency/48/000000/partly-cloudy-day.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="box">
+      <div class="coun">
+        <div class="image">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/014/897/727/non_2x/cloud-sun-icon-design-free-vector.jpg"
+            alt="">
+        </div>
+        <div class="climate">
+          <h2>ClimaMan</h2>
+        </div>
+
+      </div>
+
+
+      <div class="theme-toggle">
+        <input type="checkbox" id="themeSwitch" />
+        <label for="themeSwitch">
+          <i class="fa-solid fa-sun"></i>
+          <i class="fa-solid fa-moon"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+    </div>
+
+
+    <form class="country">
+      <input type="text" id="name" autocomplete="off" placeholder="Enter city...">
+      <button type="submit">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/162/162531.png" alt="">
+
+      </button>
+      <div class="suggestion-box" id="suggestion-box"></div>
+    </form>
+
+    <section class="result">
+      <figure class="name">
+        <figcaption>London</figcaption>
+        <img src="https://flagsapi.com/GB/shiny/32.png" />
+      </figure>
+      <figure class="temperature">
+        <img src="https://openweathermap.org/img/wn/10d@4x.png" />
+        <figcaption>
+          <span>31</span><sup>°</sup>
+        </figcaption>
+      </figure>
+      <p class="description">overcast clouds</p>
+      <ul>
+        <li>
+          <span>clouds</span>
+          <i class="fa-solid fa-cloud"></i>
+          <span id="clouds">98</span>%
+        </li>
+        <li>
+          <span>humidity</span>
+          <i class="fa-solid fa-droplet"></i>
+          <span id="humidity">98</span>%
+        </li>
+        <li>
+          <span>pressure</span>
+          <i class="fa-solid fa-gauge"></i>
+          <span id="pressure">1011</span>hPa
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
